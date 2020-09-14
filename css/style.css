@@ -1,0 +1,362 @@
+ @font-face {
+     font-family: 'DIN Pro';
+     src: url('../fonts/DINPro-Medium.woff') format('woff');
+     font-weight: 500;
+     font-style: normal;
+ }
+
+ @font-face {
+     font-family: 'DIN Pro';
+     src: url('../fonts/DINPro-Bold.woff') format('woff');
+     font-weight: bold;
+     font-style: normal;
+ }
+
+ @font-face {
+     font-family: 'DIN Pro';
+     src: url('../fonts/DINPro.woff') format('woff');
+     font-weight: 400;
+     font-style: normal;
+ }
+
+ @font-face {
+     font-family: 'Myriad Pro';
+     src: url('../fonts/MyriadPro-Regular.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+ }
+
+ html {
+     box-sizing: border-box;
+ }
+
+ *, *::before, *::after {
+     box-sizing: inherit;
+ }
+
+ img {
+     width: 100%;
+     height: auto;
+ }
+
+ body {
+     font-family: 'Myriad Pro';
+     font-style: normal;
+     font-weight: normal;
+     color: #08172d;
+     font-size: 18px;
+     text-align: center;
+ }
+
+ .projects {
+     padding-top: 70px;
+     padding-bottom: 106px;
+ }
+
+ .projects__title {
+     font-family: 'DIN Pro';
+     font-size: 45.86px;
+     color: #344258;
+     margin-bottom: 66px;
+ }
+
+ .projects__desc {
+     max-width: 1160px;
+     padding: 0 15px;
+     margin: 0 auto;
+     letter-spacing: -.45px;
+     margin-bottom: 142px;
+ }
+
+ .projects__desc-p1 {
+     margin-bottom: 32px;
+ }
+
+ .wrapper__cards {
+     max-width: 1680px;
+     margin: 0 auto;
+     padding: 0 15px;
+ }
+
+ .projects__cards {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     margin-bottom: 83px;
+ }
+
+ .projects__card {
+     grid-column: span 1;
+     position: relative;
+ }
+
+ .project__card-title {
+     position: absolute;
+     left: 0;
+     bottom: 40px;
+     width: 100%;
+     font-family: 'DIN Pro';
+     font-weight: bold;
+     color: #fff;
+     font-size: 24px;
+     text-transform: uppercase;
+ }
+
+ .projects__more-btn {
+     background: none;
+     border: 3px solid #00264c;
+     font-family: 'DIN Pro';
+     font-weight: bold;
+     color: #00264c;
+     font-size: 15px;
+     text-transform: uppercase;
+     padding: 15px 108px;
+ }
+
+ .footer {
+     background-color: #0d1b2b;
+     padding-top: 34px;
+     padding-bottom: 96px;
+ }
+
+ .footer__wrapper {
+     max-width: 1258px;
+     padding: 0 15px;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+ }
+
+ .contacts {
+     color: #fff;
+     letter-spacing: -.45px;
+     width: 50%;
+     align-self: center;
+ }
+
+ .contacts * {
+     text-align: left;
+ }
+
+ .contacts__heading {
+     font-family: 'DIN Pro';
+     font-weight: bold;
+     font-size: 45px;
+     color: #fff;
+     letter-spacing: -.45px;
+     text-transform: uppercase;
+     margin-bottom: 68px;
+ }
+
+ .contacts a {
+     text-decoration: none;
+     color: #fff;
+ }
+
+ .contacts__desc {
+     margin-bottom: 30px;
+ }
+
+ .contacts__adress {
+     max-width: 360px;
+     line-height: 23px;
+     margin-bottom: 50px;
+ }
+
+ .form__request *, .contacts * {
+     display: block;
+ }
+
+ .contacts__links {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+ }
+
+ .contacts__links-tels {
+     padding-top: 4px;
+ }
+
+ .contacts__link-tel {
+     margin-bottom: 8px;
+     font-size: 30px;
+ }
+
+ .contacts__link-tel:last-child {
+     margin: 0;
+ }
+
+ .contacts__links-social {
+     border-left: 3px solid #3d95e3;
+     color: #3d95e3;
+     align-self: flex-start;
+     padding-top: 20px;
+     padding-bottom: 4px;
+     padding-left: 35px;
+ }
+
+ .contacts__links-social a {
+     color: #3d95e3;
+ }
+
+ .social__mail {
+     margin-bottom: 24px;
+ }
+
+ .form__request {
+     flex-basis: 470px;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     border: 3px solid #243448;
+     justify-content: center;
+     padding: 38px 38px 30px 38px;
+ }
+
+ .request__input {
+     border: none;
+     color: #fff;
+     background-color: #243448;
+     font-family: 'DIN Pro';
+     font-weight: 500;
+     font-size: 15px;
+     padding: 18px 35px;
+     margin-bottom: 2px;
+ }
+
+ .request__input::placeholder {
+     color: rgba(255, 255, 255, 0.839);
+ }
+
+ .form__request_input-comm {
+     margin-bottom: 17px;
+     height: 111px;
+     resize: none;
+ }
+
+ .request__conf-link {
+     color: #4c89c1;
+     font-family: 'DIN Pro';
+     font-weight: 500;
+     font-size: 15px;
+     margin-bottom: 20px;
+ }
+
+ .request__btn {
+     background: none;
+     border: 3px solid #fff;
+     color: #fff;
+     text-transform: uppercase;
+     padding: 20px;
+ }
+
+ .modal {
+     position: fixed;
+     background-color: #243448de;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 99;
+     color: #fff;
+     display: flex;
+     align-items: center;
+     transform: translateX(100%);
+     transition: .2s linear all;
+ }
+
+ .modal__title {
+     font-family: 'DIN Pro';
+     font-weight: bold;
+     text-transform: uppercase;
+     font-size: 32px;
+     margin-bottom: 40px;
+ }
+
+ .modal__wrapper {
+     max-width: 365px;
+     margin: 0 auto;
+     opacity: 1;
+ }
+
+ .modal__pic {
+     margin-bottom: 40px;
+ }
+
+ .modal__active {
+     transform: translateX(0);
+ }
+
+ @media screen and (max-width: 1023px) {
+     .projects {
+         padding-top: 38px;
+         padding-bottom: 38px;
+     }
+     .projects__desc {
+         margin-bottom: 38px;
+     }
+     .projects__title {
+         margin-bottom: 38px;
+     }
+     .footer__wrapper {
+         flex-direction: column;
+     }
+     .contacts {
+         width: 100%;
+     }
+     .contacts__links {
+         margin-bottom: 30px;
+     }
+     .contacts__heading {
+         margin-bottom: 38px;
+     }
+ }
+
+ @media screen and (max-width: 767px) {
+     .projects {
+         padding-top: 20px;
+         padding-bottom: 20px;
+     }
+     .projects__title {
+         font-size: 23px;
+         margin-bottom: 20px;
+     }
+     .projects__desc {
+         font-size: 15px;
+     }
+     .projects__title {
+         margin-bottom: 20px;
+     }
+     .projects__cards {
+         grid-template-columns: 1fr;
+         margin-bottom: 20px;
+     }
+     .projects__more-btn {
+         padding: 15px;
+         width: 100%;
+     }
+     .contacts__heading {
+         font-size: 23px;
+         margin-bottom: 20px;
+     }
+     .contacts__desc {
+         margin-bottom: 20px;
+     }
+     .contacts__links-tels {
+         margin-bottom: 20px;
+     }
+     .form__request {
+         padding: 15px 15px 15px 15px;
+     }
+     .request__input {
+         width: 100%;
+     }
+     .request__btn {
+         padding: 0;
+         padding-top: 20px;
+         padding-bottom: 20px;
+     }
+     .request__conf-link {
+         font-size: 10px;
+     }
+ }
