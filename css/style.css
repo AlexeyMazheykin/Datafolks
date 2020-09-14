@@ -36,7 +36,7 @@
 
  img {
      width: 100%;
-     height: auto;
+     height: 100%;
  }
 
  body {
@@ -259,10 +259,18 @@
      height: 100%;
      z-index: 99;
      color: #fff;
-     display: flex;
-     align-items: center;
      transform: translateX(100%);
      transition: .2s linear all;
+ }
+
+ .modal__wrapper {
+     width: 90vw;
+     height: 100vh;
+     padding: 0 10px;
+     margin: 0 auto;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
  }
 
  .modal__title {
@@ -273,15 +281,13 @@
      margin-bottom: 40px;
  }
 
- .modal__wrapper {
-     max-width: 385px;
-     padding: 0 10px;
-     margin: 0 auto;
-     opacity: 1;
+ .modal__pic {
+     height: 50vh;
+     margin-bottom: 40px;
  }
 
- .modal__pic {
-     margin-bottom: 40px;
+ .modal__pic-thumb {
+     object-fit: contain;
  }
 
  .modal__active {
