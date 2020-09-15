@@ -9,7 +9,7 @@ modal.addEventListener('click', () => {
 });
 document.addEventListener('keydown', (ev) =>  {
     if (modal.classList.contains('modal__active')) {
-        if (ev.keyCode === 27) {
+        if (ev.code === 'Escape') {
             modal.classList.remove('modal__active');
         }
     }
